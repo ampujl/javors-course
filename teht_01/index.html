@@ -1,0 +1,27 @@
+<html>
+	<head></head>
+	<body>
+		<h1>Hei Jakki!</h1>
+		<div id="teht">
+			<p>Muuta funktiota niin että se näyttää kellon ajan. Kellon ajan saat Date() funktiota kutsumalla.
+			</p>
+
+			<!-- tämä elementti on nappi -->
+			<button type="button" onclick="naytaViesti()">
+				Paina minua näyttääksesi viestin.
+			</button>
+
+			<!-- tämä elementti on tekstikappale -->
+			<p id="demo"></p>
+		</div>
+		<script>
+			// tämä on funktio
+			function naytaViesti(){
+				var viesti = "Hello world!";
+
+				// tämä hakee elementin jonka id on "demo" ja asettaa sen sisällöksi muuttujan viesti sisällön.
+				document.getElementById("demo").innerHTML = viesti;
+			}
+		</script>
+	</body>
+</html>

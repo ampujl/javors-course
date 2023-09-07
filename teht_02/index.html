@@ -1,0 +1,27 @@
+<html>
+	<head></head>
+	<body>
+		<h1>Hei Jakki!</h1>
+		<div id="teht">
+			<p>Muuta funktiota niin että se näyttää sekä etunimen että sukunimen. (Muista lisätä välilyönti funktiossa!)
+			</p>
+
+			Etunimi: <input type="text" id="etunimi" value="Aku"><br>
+			Sukunimi: <input type="text" id="sukunimi" value="Ankka"><br><br>
+
+			<button type="button" onclick="naytaViesti()">
+				Paina minua näyttääksesi viestin.
+			</button>
+
+			<p id="demo"></p>
+		</div>
+		<script>
+			function naytaViesti(){
+				var viesti = "Hello world!";
+				// tämä hakee elementin jonka id on etunimi
+				var etunimi = document.getElementById("etunimi").value;
+				document.getElementById("demo").innerHTML = etunimi;
+			}
+		</script>
+	</body>
+</html>
