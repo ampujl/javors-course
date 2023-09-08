@@ -1,0 +1,48 @@
+<html>
+	<head></head>
+	<body>
+		<h1>Hei Jakki!</h1>
+		<div id="teht">
+			<p>Muuta funktiota niin että se näyttää sekä etunimen että sukunimen 10 kertaa. <br/> 
+				Vihje: saat lisättyä muutujaan tekstiä näin:<br/>
+				<code>muuttuja = muuttuja + "tekstiä";</code>
+				Vihje: rivinvaihdon saat lisäämällä rivin loppuun "&lt br/&gt" <br/>
+				
+				Tässä harjoitellaan for silmukkaa. <br/> 
+				For-silmukan syntaksi on: <br/>
+				<code>for (var i = 0; i < 100; i++){<br/>
+					// tänne tulee koodi jota haluat suorittaa silmukassa<br/>
+				}</code><br/>
+
+				Katsotaan silmukkaa hiukan lähemmin:<br/>
+				<code>var i = 0;</code> luodaan indeksi-muuttuja jolla lasketaan kuinka monta kertaa silmukka on pyörähtäny.<br/>
+				<code>i < 100</code> ehto jonka ollessa tosi silmukkaa suoritetaan, kun epätosi silmukan suoritus loppuu.<br/>
+				<code>i++</code> komento jolla indeksiä kasvatetaan jokaisen kierroksen jälkeen (++ on erikois-operaattori joka lisää numeroon 1, sama kuin i+1)<br/>
+				Eli alussa i = 0, ensimmäisen kierroksen JÄLKEEN i = 1, toisen kierroksen JÄLKEEN i = 2 jne. 
+
+			</p>
+
+			Etunimi: <input type="text" id="etunimi" value="Aku"><br>
+			Sukunimi: <input type="text" id="sukunimi" value="Ankka"><br><br>
+
+			<button type="button" onclick="naytaViesti()">
+				Paina minua näyttääksesi viestin.
+			</button>
+
+			<p id="demo"></p>
+		</div>
+		<script>
+			function naytaViesti(){
+
+				var etunimi = document.getElementById("etunimi").value;
+				var sukunimi = document.getElementById("sukunimi").value;
+
+				var teksti = etunimi + " " + sukunimi;
+				var viesti = "";
+
+		
+				document.getElementById("demo").innerHTML = viesti;
+			}
+		</script>
+	</body>
+</html>
