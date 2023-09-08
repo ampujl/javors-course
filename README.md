@@ -26,3 +26,19 @@ Katsotaan silmukkaa hiukan lähemmin:<br/>
 <code>i < 100</code> ehto jonka ollessa tosi silmukkaa suoritetaan, kun epätosi silmukan suoritus loppuu.<br/>
 <code>i++</code> komento jolla indeksiä kasvatetaan jokaisen kierroksen jälkeen (++ on erikois-operaattori joka lisää numeroon 1, sama kuin i+1)<br/>
 Eli alussa i = 0, ensimmäisen kierroksen JÄLKEEN i = 1, toisen kierroksen JÄLKEEN i = 2 jne. 
+
+## Tehtävä 4
+Muuta funktiota niin että se näyttää nimen edessä "Mr. "  jo etunimi on Aku<br/> 
+Vihje: saat lisättyä muutujan alkuun tekstiä näin:<br/>
+<code>muuttuja = "tekstiä"  + muuttuja;</code>
+
+Tässä harjoitellaan if lausetta. <br/> 
+If-lauseen syntaksi on: <br/>
+<code>if (muuttuja == "tekstiä"){<br/>
+	// tänne tulee koodi jonka haluat suorittaa jos ehto on tosi<br/>
+}</code><br/>
+
+Katsotaan if-lausetta hiukan lähemmin:<br/>
+<code>(muuttuja == "tekstiä")</code> ehto jota vertaillaan <br/>
+Mahdollisia operaatoreita ehtolauseissa on <code>==, ===, !=, <, >, <=, >=</code>.<br/>
+Osaatko sanoa mitä ne merkitsevät?
